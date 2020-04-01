@@ -20,79 +20,79 @@ var jsonObj = {
             "title": "Photo 1",
             "link": "/images/Placeholder.jpg",
             "description": "Sample description: This is photo 1",
-            "shopLink": "www.google.com"
+            "shopLink": "http://www.google.com"
         },
         {
             "title": "Photo 2",
             "link": "/images/Placeholder.jpg",
             "description": "Sample description: This is photo 2",
-            "shopLink": "send to shop link"
+            "shopLink": "http://www.amazon.com"
         },
         {
             "title": "Photo 3",
             "link": "/images/Placeholder.jpg",
             "description": "Sample description: This is photo 3",
-            "shopLink": "send to shop link"
+            "shopLink": "http://www.youtube.com"
         },
         {
             "title": "Photo 4",
             "link": "/images/Placeholder.jpg",
             "description": "Sample description: This is photo 4",
-            "shopLink": "send to shop link"
+            "shopLink": "http://wwww.theanou.com"
         },
         {
             "title": "Photo 5",
             "link": "/images/Placeholder.jpg",
             "description": "Sample description: This is photo 5",
-            "shopLink": "send to shop link"
+            "shopLink": "http://www.bing.com"
         },
         {
             "title": "Photo 6",
             "link": "/images/Placeholder.jpg",
             "description": "Sample description: This is photo 6",
-            "shopLink": "send to shop link"
+            "shopLink": "http://wwww.theanou.com"
         },
         {
             "title": "Photo 7",
             "link": "/images/Placeholder.jpg",
             "description": "Sample description: This is photo 7",
-            "shopLink": "send to shop link"
+            "shopLink": "http://wwww.theanou.com"
         },
         {
             "title": "Photo 8",
             "link": "/images/Placeholder.jpg",
             "description": "Sample description: This is photo 8",
-            "shopLink": "send to shop link"
+            "shopLink": "http://wwww.theanou.com"
         },
         {
             "title": "Photo 9",
             "link": "/images/Placeholder.jpg",
             "description": "Sample description: This is photo 9",
-            "shopLink": "send to shop link"
+            "shopLink": "http://wwww.theanou.com"
         },
         {
             "title": "Photo 10",
             "link": "/images/Placeholder.jpg",
             "description": "Sample description: This is photo 10",
-            "shopLink": "send to shop link"
+            "shopLink": "http://wwww.theanou.com"
         },
         {
             "title": "Photo 11",
             "link": "/images/Placeholder.jpg",
             "description": "Sample description: This is photo 11",
-            "shopLink": "send to shop link"
+            "shopLink": "http://wwww.theanou.com"
         },
         {
             "title": "Photo 12",
             "link": "/images/Placeholder.jpg",
             "description": "Sample description: This is photo 12",
-            "shopLink": "send to shop link"
+            "shopLink": "http://wwww.theanou.com"
         },
         {
             "title": "Photo 13",
             "link": "/images/Placeholder.jpg",
             "description": "Sample description: This is photo 13",
-            "shopLink": "send to shop link"
+            "shopLink": "http://wwww.theanou.com"
         }
     ]
 }
@@ -165,7 +165,7 @@ window.onload = function main() {
             
             modalImg.src = src
             modalBotTxt.innerHTML = '<p>' + botTxt +
-                '</p><p><a href="' + linkTxt + '" Shop link </a></p>'
+                '</p><p><a href="' + linkTxt + '" target="_blank"> Shop link </a></p>'
         })
     })
 
