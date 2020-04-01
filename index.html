@@ -48,7 +48,7 @@
     }
     
     @media (min-width: 1001px) {
-        /* The Modal*/
+        /*Background container*/
         .modal {
             display: none; /* Hidden by default */
             position: fixed; /* Stay in place */
@@ -57,41 +57,47 @@
             top: 0;
             left: 0;
             width: 100%; /* Full width */
-            height: 10%; /* Full height */
+            height: 100%; /* Full height */
             background-color: rgb(0,0,0); /* Fallback color */
             background-color: rgba(10, 10, 10, 0.5); /* Black w/ opacity */
+            max-height: 100%;
+            overflow-y: auto;
         }
-        .modal-content {
+
+        #mpDiv {
+            /*Foreground Container*/
+            width: 65%;
+            height: 41.5%;
+            background-color: white;
             margin: auto;
-            display: block;
-            width: 50%;
-            max-width: 700px;
-            padding-bottom: 3%;
+            padding-bottom: 20%;
+            display: flex;
+            justify-content: left;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-size: auto 100%;
         }
+
         #mtTxt, #mbTxt {
-            float: center;
+            float: right;
             width: 80%;
-            padding-bottom: 5%;
+            margin-bottom: -10%;
             padding-left: 2%;
             text-align: left;
             color:black;  
             font-size: xx-large;
             font-weight: bold;
+            display: none;
         }
         #mbTxt {
             margin-left: 18%;
         }
         .icon {
+            display: none;
             max-width: 8%;
             max-height: 8%;
-            margin-left: 17%;
-        }
-        #mpDiv {
-            max-width: 50%;
-            background-color: white;
-            margin: auto;
-            padding-top: 2%;
-            padding-bottom: 20%;
+            /*margin-left: 17%;*/
+            margin-left: 85%;
         }
         body {
             background-color: blue;
@@ -104,7 +110,7 @@
             display: none; /* Hidden by default */
             position: fixed; /* Stay in place */
             z-index: 1; /* Sit on top */
-            padding-top: 40%; /* Location of the box */
+            padding-top: 35%; /* Location of the box */
             top: 0;
             left: 0;
             width: 100%; /* Full width */

@@ -125,7 +125,7 @@ window.onload = function main() {
                 jsonObj.photos[id].description + 
                 '" style="width:100%;"></div>'
             } else {
-                //if empty, still add img for scaling
+                //if empty, add empty 'img' for scaling
                 photoStr = '<img src ="/images/empty.png" alt="empty" style="width:100%;"></div>'
             }
             
@@ -147,6 +147,8 @@ window.onload = function main() {
 
     span.addEventListener("click", function() {
         modal.style.display = "none"
+        //turn back on scroll bar
+        document.documentElement.style.overflow = 'auto';
     })
 
     Array.from(allPhotos).forEach(photo => {
@@ -160,12 +162,19 @@ window.onload = function main() {
             //set modal window here!
             modal.style.display = "block"
 
-            var modalImg = document.getElementById("mImg")
+            //var modalImg = document.getElementById("mImg")
             var modalBotTxt = document.getElementById("mbTxt")
+            var container = document.getElementById("mpDiv")
+
+            container.style.backgroundImage = 'url("' + src + '")' 
+
+            //modalImg.src = src
             
-            modalImg.src = src
             modalBotTxt.innerHTML = '<p>' + botTxt +
                 '</p><p><a href="' + linkTxt + '" target="_blank"> Shop link </a></p>'
+            
+            //turn off window scroll bar
+            document.documentElement.style.overflow = 'hidden'
         })
     })
 
