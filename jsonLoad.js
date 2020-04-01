@@ -20,79 +20,79 @@ var jsonObj = {
             "title": "Photo 1",
             "link": "/images/Placeholder.jpg",
             "description": "Sample description: This is photo 1",
-            "shopLink": "http://www.google.com"
+            "shopLink": "https://wwww.theanou.com"
         },
         {
             "title": "Photo 2",
             "link": "/images/Placeholder.jpg",
             "description": "Sample description: This is photo 2",
-            "shopLink": "http://www.amazon.com"
+            "shopLink": "https://wwww.theanou.com"
         },
         {
             "title": "Photo 3",
             "link": "/images/Placeholder.jpg",
             "description": "Sample description: This is photo 3",
-            "shopLink": "http://www.youtube.com"
+            "shopLink": "https://wwww.theanou.com"
         },
         {
             "title": "Photo 4",
             "link": "/images/Placeholder.jpg",
             "description": "Sample description: This is photo 4",
-            "shopLink": "http://wwww.theanou.com"
+            "shopLink": "https://wwww.theanou.com"
         },
         {
             "title": "Photo 5",
             "link": "/images/Placeholder.jpg",
             "description": "Sample description: This is photo 5",
-            "shopLink": "http://www.bing.com"
+            "shopLink": "https://wwww.theanou.com"
         },
         {
             "title": "Photo 6",
             "link": "/images/Placeholder.jpg",
             "description": "Sample description: This is photo 6",
-            "shopLink": "http://wwww.theanou.com"
+            "shopLink": "https://wwww.theanou.com"
         },
         {
             "title": "Photo 7",
             "link": "/images/Placeholder.jpg",
             "description": "Sample description: This is photo 7",
-            "shopLink": "http://wwww.theanou.com"
+            "shopLink": "https://wwww.theanou.com"
         },
         {
             "title": "Photo 8",
             "link": "/images/Placeholder.jpg",
             "description": "Sample description: This is photo 8",
-            "shopLink": "http://wwww.theanou.com"
+            "shopLink": "https://wwww.theanou.com"
         },
         {
             "title": "Photo 9",
             "link": "/images/Placeholder.jpg",
             "description": "Sample description: This is photo 9",
-            "shopLink": "http://wwww.theanou.com"
+            "shopLink": "https://wwww.theanou.com"
         },
         {
             "title": "Photo 10",
             "link": "/images/Placeholder.jpg",
             "description": "Sample description: This is photo 10",
-            "shopLink": "http://wwww.theanou.com"
+            "shopLink": "https://wwww.theanou.com"
         },
         {
             "title": "Photo 11",
             "link": "/images/Placeholder.jpg",
             "description": "Sample description: This is photo 11",
-            "shopLink": "http://wwww.theanou.com"
+            "shopLink": "https://wwww.theanou.com"
         },
         {
             "title": "Photo 12",
             "link": "/images/Placeholder.jpg",
             "description": "Sample description: This is photo 12",
-            "shopLink": "http://wwww.theanou.com"
+            "shopLink": "https://wwww.theanou.com"
         },
         {
             "title": "Photo 13",
             "link": "/images/Placeholder.jpg",
             "description": "Sample description: This is photo 13",
-            "shopLink": "http://wwww.theanou.com"
+            "shopLink": "https://wwww.theanou.com"
         }
     ]
 }
