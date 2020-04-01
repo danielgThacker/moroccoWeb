@@ -20,7 +20,7 @@ var jsonObj = {
             "title": "Photo 1",
             "link": "/images/Placeholder.jpg",
             "description": "Sample description: This is photo 1",
-            "shopLink": "send to shop link"
+            "shopLink": "www.google.com"
         },
         {
             "title": "Photo 2",
@@ -165,7 +165,7 @@ window.onload = function main() {
             
             modalImg.src = src
             modalBotTxt.innerHTML = '<p>' + botTxt +
-                '</p><p>' + linkTxt + '</p>'
+                '</p><p><a href="' + linkTxt + '" Shop link </a></p>'
         })
     })
 
