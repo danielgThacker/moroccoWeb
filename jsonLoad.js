@@ -2,7 +2,7 @@ var jsonObj = {
     "userName": "Test User",
     "photoLink": "link to file upload or local",
     "description": "This is a test user. Testing obj loading",
-    "shopLink": "www.google.com",
+    "userShopLink": "www.google.com",
     "icons": [
         {
             "title": "first icon title",
@@ -103,8 +103,9 @@ window.onload = function main() {
     var rows = Math.floor(numPhotos/3)
     rem > 0 ? rows++ : 0
 
-    console.log("Photos: " + numPhotos)
-    console.log("Rows: " + rows)
+    //Debug
+    //console.log("Photos: " + numPhotos)
+    //console.log("Rows: " + rows)
 
     var photoDiv = document.getElementById("Photos")
 
@@ -119,10 +120,10 @@ window.onload = function main() {
             containerStr += '<div class="column">'
             if (numPhotos > 0) {
                 photoStr = '<img class="image" id="' + r + c +
-                '" data-shopLink="' + jsonObj.photos[id].shopLink
-                + '"img src="' + 
-                jsonObj.photos[id].link + '" alt="' +
-                jsonObj.photos[id].description + 
+                '" img src="' + jsonObj.photos[id].link + 
+                '" alt="' + jsonObj.photos[id].title + 
+                '" data-content="' + jsonObj.photos[id].description + 
+                '" data-shopLink="' + jsonObj.photos[id].shopLink +
                 '" style="width:100%;"></div>'
             } else {
                 //if empty, add empty 'img' for scaling
@@ -142,9 +143,6 @@ window.onload = function main() {
     var modal = document.getElementById("myModal")
     var span = document.getElementsByClassName("close")[0]
 
-    var userName = document.getElementById("mtTxt")
-    userName.innerHTML = jsonObj.userName
-
     span.addEventListener("click", function() {
         modal.style.display = "none"
         //turn back on scroll bar
@@ -153,26 +151,53 @@ window.onload = function main() {
 
     Array.from(allPhotos).forEach(photo => {
         photo.addEventListener("click", function() {
-            console.log("clicked")
+            //get clicked photo data
             var element = document.getElementById(photo.id)
             var src = element.src
-            var botTxt = element.alt
-            var linkTxt = element.getAttribute("data-shopLink")
+            var title = element.alt
+            var link = element.getAttribute("data-shopLink")
+            var content = element.getAttribute("data-content")
 
             //set modal window here!
             modal.style.display = "block"
-
-            //var modalImg = document.getElementById("mImg")
-            var modalBotTxt = document.getElementById("mbTxt")
-            var container = document.getElementById("mpDiv")
-
-            container.style.backgroundImage = 'url("' + src + '")' 
-
-            //modalImg.src = src
             
-            modalBotTxt.innerHTML = '<p>' + botTxt +
-                '</p><p><a href="' + linkTxt + '" target="_blank"> Shop link </a></p>'
-            
+            //set content
+            var userStr = '<div id="userDiv">' + 
+                '<img id="icon" src="images/Logo200.png">' +
+                 '<div id="userName">' + jsonObj.userName + '</div>' + '</div>'
+            var imgStr = '<img id="mImg" src="' + src + '">'
+            var titleStr = '<div id="title"><p id="tFormat">' + title + '</p></div>'
+            var contentStr = '<div id="content"><div id="cFormat">' +  content + '</div></div>'
+            var linkStr = '<div id="link"><div id="lFormat"><a href="' + link + '">Click here to goto shop</a></div></div>'
+
+            //Check media sizes
+            var modalWin = document.getElementById("mpDiv")
+            var small;
+            var medium = window.matchMedia("(max-width: 999px")
+            var large = window.matchMedia("(min-width: 1000px)")
+            if (medium.matches) {
+                //if medium:
+                // [icon] Username
+                //   Title
+                //  +------+
+                //  |      | 
+                //  |      | 
+                //  +------+ 
+                //   Content
+                //    Link
+                modalWin.innerHTML = userStr + titleStr + imgStr + contentStr + linkStr
+            }
+
+            if (large.matches) {
+                //if large:
+                //+---------+ [icon] Username
+                //|         | Title 
+                //|         | Content
+                //|         | Hashtags (maybe)
+                //+---------+  Link
+                modalWin.innerHTML = imgStr + '<div id="mContain">' + userStr + titleStr + contentStr + linkStr + '</div>'
+            }
+
             //turn off window scroll bar
             document.documentElement.style.overflow = 'hidden'
         })
