@@ -1,7 +1,7 @@
 var jsonObj = {
-    "userName": "Aisha Ait Issa",
-    "photoLink": "https://res.cloudinary.com/hork5h8x1/image/upload/seller111_ilkartisan_rank8_time1461865172.jpg",
-    "description": "I joined the cooperative to support my children so they can succeed in their lives.",
+    "userName": "Association Zaouia",
+    "photoLink": "https://res.cloudinary.com/hork5h8x1/image/upload/c_fill,g_center,h_225,q_85,w_300/v1583145974/seller67_ilkseller_rank0_time1583145969.jpg",
+    "description": "Association Zaouia was created for the purpose of social development in the community. This effort was led by the women of Ssi Youssef, in November of 2011. Their goal is to lift other women in the community and push them to accomplish greater things in life. ",
     "userShopLink": "https://www.theanou.com/store/111-coop-ihkf-n-ighir-bougmaz-morocco",
     "icons": [
         {
@@ -17,10 +17,10 @@ var jsonObj = {
     ],
     "photos": [
         {
-            "title": "Photo 1",
-            "link": "/images/Placeholder.jpg",
-            "description": "Sample description: This is photo 1",
-            "shopLink": "https://www.theanou.com"
+            "title": "Beni-Ourain - By Imani Rabia",
+            "link": "https://res.cloudinary.com/hork5h8x1/image/upload/c_pad,h_600,q_100,w_800,q_100,e_auto_brightness/v1578182025/seller67_product11626_rank1_time1578182022.jpg",
+            "description": "The Beni-Ourain rug is used daily in the lives of local Morcoans. Approx. Size 7ft 4in x 4ft or 2m 23cm x 1m 23cm",
+            "shopLink": "https://www.theanou.com/product/11626-black-white-beni-ourain"
         },
         {
             "title": "Photo 2",
@@ -152,7 +152,7 @@ window.onload = function main() {
     userName.textContent = jsonObj.userName
 
     var userLink = document.getElementById("userLink")
-    userLink.innerHTML = '<a href="' + jsonObj.userShopLink + '">Link to my store</a>'
+    userLink.innerHTML = '<a href="' + jsonObj.userShopLink + '">Link to store</a>'
 
     span.addEventListener("click", function() {
         modal.style.display = "none"
@@ -179,7 +179,7 @@ window.onload = function main() {
             var imgStr = '<img id="mImg" src="' + src + '">'
             var titleStr = '<div id="title"><p id="tFormat">' + title + '</p></div>'
             var contentStr = '<div id="content"><div id="cFormat">' +  content + '</div></div>'
-            var linkStr = '<div id="link"><div id="lFormat"><a href="' + link + '">Click here to goto shop</a></div></div>'
+            var linkStr = '<div id="link"><div id="lFormat"><a href="' + link + '">Click here to go to shop</a></div></div>'
 
             //Check media sizes
             var modalWin = document.getElementById("mpDiv")
