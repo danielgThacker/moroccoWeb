@@ -174,7 +174,7 @@ window.onload = function main() {
             
             //set content
             var userStr = '<div id="userDiv">' + 
-                '<img id="icon" src="images/Logo200.png">' +
+                '<div id="icon"></div>' +
                  '<div id="userName">' + jsonObj.userName + '</div>' + '</div>'
             var imgStr = '<img id="mImg" src="' + src + '">'
             var titleStr = '<div id="title"><p id="tFormat">' + title + '</p></div>'
@@ -211,6 +211,9 @@ window.onload = function main() {
 
             //turn off window scroll bar
             document.documentElement.style.overflow = 'hidden'
+            var iconstyle = document.getElementById("icon")
+            var iconlink = jsonObj.photoLink
+            iconstyle.style.backgroundImage = 'url("' + iconlink + '")'
         })
     })
 

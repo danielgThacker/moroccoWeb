@@ -18,10 +18,28 @@
 
 
 @media (min-width: 1000px) {
-    #userHeader {
-        padding-bottom: 25%;
-        padding-left: 5%;
+    #user_name {
+        font-weight: bold;
+        font-size: 300%;
+    }
+
+    #userLink {
+        font-size: 175%;
         padding-top: 5%;
+        padding-left: 5%;
+    }
+
+    #userText {
+        font-size: 200%;
+        padding-right: 10%;
+        padding-top: 2%;
+    }
+
+    #userHeader {
+        padding-bottom: 3%;
+        padding-left: 5%;
+        padding-top: 8%;
+        border-bottom: solid 3px #e4eaf5;
     }
     
     #userImg {
@@ -30,7 +48,22 @@
         height: 200px;
         width: 200px;
         background-position: center;
+        margin-right: 8%;
+        margin-bottom: 4%;
     }
+
+    #Photos {
+        width: 100%;
+        margin: auto;
+        padding-top: 1%;
+    }   
+
+    #userImg {
+        border-radius:50%;  
+        height: 200px;
+        width: 200px;
+        background-position: center;
+    }  
 
     #Photos {
         width: 70%;
@@ -166,12 +199,22 @@
         margin: auto;
         padding-top: 1%;
     }   
+
     #userImg {
         border-radius:50%;  
         height: 200px;
         width: 200px;
         background-position: center;
     }  
+
+    #icon {
+        border-radius: 50%;
+        max-width: 100px;
+        max-height: 100px;
+        margin-bottom: 5%;
+        background-position: center;
+    }
+
     /* The Close Button */
     .close {
         position: absolute;
@@ -221,12 +264,6 @@
     #userName {
         padding-top: 1.75%;
         padding-left: 1.75%;
-    }
-
-    #icon {
-        max-width: 100px;
-        max-height: auto;
-        padding-bottom: 3%;
     }
 
     #mImg {
