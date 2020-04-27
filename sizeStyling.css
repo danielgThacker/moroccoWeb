@@ -8,7 +8,7 @@
 .image {
     cursor: pointer;
     width: auto;
-    height: 275px;
+    height: 260px;
     object-fit: cover;
 }
 .image:hover, .close:hover {
