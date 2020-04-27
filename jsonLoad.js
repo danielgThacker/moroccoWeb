@@ -211,9 +211,6 @@ window.onload = function main() {
 
             //turn off window scroll bar
             document.documentElement.style.overflow = 'hidden'
-            var iconstyle = document.getElementById("icon")
-            var iconlink = jsonObj.photoLink
-            iconstyle.style.backgroundImage = 'url("' + iconlink + '")'
         })
     })
 

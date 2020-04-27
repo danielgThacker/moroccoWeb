@@ -17,7 +17,7 @@
 
 
 
-@media (min-width: 1000px) {
+@media (min-width: 700px) {
     #user_name {
         font-weight: bold;
         font-size: 300%;
@@ -159,7 +159,7 @@
 
 }
 
-@media (max-width: 999px){   
+@media (max-width: 699px){   
     #user_name {
         font-weight: bold;
         font-size: 300%;
